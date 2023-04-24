@@ -15,7 +15,7 @@ li {
     list-style-type: none;
 }
 
-section {
+.section {
     padding:0 var(--padding-l);
 }
 
@@ -27,6 +27,7 @@ section {
 
 .upper {
     text-transform: uppercase;
+    font-size: var(--fs-s);
 }
 
 .paragraph {
@@ -48,6 +49,10 @@ section {
 
 .sub-title {
     margin-top: var(--margin-xl);
+    font-size: var(--fs-xs);
+    font-family: var(--ff-kaisei);
+    color: var(--primary-text-color);
+    
 }
 
 .image {
@@ -105,6 +110,9 @@ section {
 .about-us__title {
     margin-top: 40px;
 }
+.direction-def{
+   display: none;
+}
 
 .mt-20 {
     margin-top: 20px;
@@ -117,20 +125,22 @@ section {
    .burger-menu{
       display: none;
    }
-   .header{
-      justify-content: ;
-   }
+   .upper {
+      font-size: var(--fs-m);
+  }
+   
    .navigation{
       display: flex;
       justify-content: space-between;
       width: 600px;
-      margin-right: calc(var(--margin-xxxl) - var(--margin-l));
+      
    }
    .nav{
       display: flex;
       justify-content: space-between;
       font-family: "kaisei" ;
       font-size: var(--fs-s);
+      font-weight: 400;
    }
 
    .preview {
@@ -142,6 +152,9 @@ section {
   .preview__title {
    margin-top: 245px;
    font-size: var(--fs-xxl);
+  }
+  .player{
+   height: 599px;
   }
   .player__bg {
    width: 1512px;
@@ -156,5 +169,61 @@ section {
    transform: translate(0%, -60px);
 }
 
+
+.title {
+   font-size: var(--fs-xl) ;
+}
+
+.about-us__paragraph{
+   width: 692px;
+}
+.paragraph{
+   font-size: var(--fs-s);
+}
+.about-us__paragraph .paragraph:first-child{
+   margin-top: var(--margin-xxl);
+}
+
+.image {
+   width: 1256px;
+   margin-top: var(--margin-xxl);
+}
+
+.section{
+   padding:  calc(var(--margin-xxxl) - 8px) var(--margin-xxxl) 0 var(--margin-xxxl) ;
+}
+.section:first-child{
+   padding:  0 var(--margin-xxxl) ;
+}
+
+.sub-title{
+   font-size: calc(var(--fs-m) + 4px);
+   font-weight: 400;
+   font-family: var(--ff-assistant);
+}
+
+.direction{
+   display: none;
+}
+.direction-def{
+   display: unset;
+}
+
+.direction-def__group{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top:var(--margin-m) ;
+}
+.direction-def__paragraph{
+   width: 736px;
+}
+.direction-def__image{
+   width: 259px;
+   height: 92px;
+}
+.direction-def__group .paragraph{
+   margin-top: 0;
+}
 
 }
